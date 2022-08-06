@@ -15,10 +15,12 @@ const Home: NextPage = () => {
         <div className={`${styles.container} fixed`}>
             <Test />
         </div>
-        <PageOne/>
-        <PageTwo/>
-        <PageThree/>
-        <PageFour/>
+        <div className="h-screen w-full overflow-hidden scroll-smooth">
+            <PageOne/>
+            <PageTwo/>
+            <PageThree/>
+            <PageFour/>
+        </div>
         </>
     );
 };
