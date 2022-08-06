@@ -4,14 +4,22 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { Button } from '@material-tailwind/react';
 import Test from '../components/Navbar/Navbar';
+import PageOne from '../components/Pages/PageOne/PageOne';
+import PageTwo from '../components/Pages/PageTwo/PageTwo';
+import PageThree from '../components/Pages/PageThree/PageThree';
+import PageFour from '../components/Pages/PageFour/PageFour';
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <>
+        <div className={`${styles.container} fixed`}>
             <Test />
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
-            <Button>Hello world!</Button>
         </div>
+        <PageOne/>
+        <PageTwo/>
+        <PageThree/>
+        <PageFour/>
+        </>
     );
 };
 
