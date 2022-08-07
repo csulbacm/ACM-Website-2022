@@ -1,9 +1,9 @@
-import {Component, ReactComponentElement, ReactElement, useEffect, useState} from 'react';
+import { ReactElement, useState} from 'react';
 
 
 type PropTypes = {
     pages:ReactElement[],
-    weight? :Number,
+    weight? :number,
 }
 
 export default function PageContainer({pages, weight=100}:PropTypes) {
