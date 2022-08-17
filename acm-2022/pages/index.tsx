@@ -10,16 +10,25 @@ import PageThree from '../components/Pages/PageThree/PageThree';
 import PageFour from '../components/Pages/PageFour/PageFour';
 import PageContainer from '../components/Pages/PageContainer/PageContainer';
 import { ReactElement } from 'react';
-
+import Sponsors from '../components/Sponsors/Sponsors';
+import Officers from '../components/Officers/Officers';
 
 const Home: NextPage = () => {
-    const pages:ReactElement[] = [<PageOne/>, <PageTwo/>, <PageThree/>, <PageFour/>]
+    const pages: ReactElement[] = [
+        <PageOne />,
+        <PageTwo />,
+        <PageThree />,
+        <PageFour />,
+    ];
     return (
         <>
-        <div className={`${styles.container} fixed z-10`}>
-            <Test />
-        </div>
-        <PageContainer pages={pages}/>
+            <div className={styles.main}>
+                <Test />
+                <Sponsors />
+                <hr />
+                <Officers />
+            </div>
+            <PageContainer pages={pages} />
         </>
     );
 };
