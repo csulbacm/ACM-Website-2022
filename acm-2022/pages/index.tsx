@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <div className={`${styles.container} fixed z-10`}>
             <Test />
         </div>
-        <PageContainer pages={pages}/>
+        <PageContainer pages={pages} weight={30}/>
         </>
     );
 };
