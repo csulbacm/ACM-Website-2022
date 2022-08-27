@@ -2,6 +2,9 @@ import { IconButton } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
+// const appID = "861937135190917";
+// const appSecret = "69b7d5ad956ba7d28dba38408d800e7d";
+
 const SocialMedia = () => {
     const social = [
         {url: "https://www.facebook.com/csulbacm", icon: faFacebook},
