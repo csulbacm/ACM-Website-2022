@@ -13,13 +13,13 @@ const SocialMedia = () => {
         {url: "https://twitter.com/csulbacm?lang=en", icon: faTwitter},
         {url: "https://www.youtube.com/channel/UCbohZYGUm6qNFjnTbLhTHag/featured" , icon: faYoutube}
     ];
-    const iconColor = "#FFA726";
+    const iconColor = "white";
     const ListItem = ({url, icon}:any): any => {
         return(
             <li className="flex items-center justify-center">
                 <a href={url}>
                     <IconButton size="lg" variant="outlined">
-                        <FontAwesomeIcon icon={icon} color={iconColor}/>
+                        <FontAwesomeIcon size={"2x"} icon={icon} color={iconColor}/>
                     </IconButton>
                 </a>
             </li>
