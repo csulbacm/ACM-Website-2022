@@ -9,7 +9,6 @@ import {
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
     name: string;
-
     image: string;
     position: string;
     github: string;
@@ -19,7 +18,6 @@ interface Props {
 // OfficerCard is a component that displays the information of an officer
 export default function OfficerCard({
     name,
-    
     image,
     position,
     github,
@@ -27,16 +25,18 @@ export default function OfficerCard({
     website,
 }: Props) {
     return (
-        <Card className="w-96">
+        <Card className="w-80">
             <CardHeader floated={false} className="h-80">
                 <img
-                    src={'public/officers' + { image }}
+                    src={'public/officers/' + { image }}
                     alt="profile-picture"
                 />
             </CardHeader>
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-2">
-                    {name}
+                    <a href={website} target="_blank" rel="noreferrer">
+                        {name}
+                    </a>
                 </Typography>
                 <Typography color="blue" className="font-medium" textGradient>
                     {position}

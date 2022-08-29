@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@material-tailwind/react": "^1.2.2",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
     "framer-motion": "^6.5.1",
     "gh-pages": "^4.0.0",
     "next": "12.2.3",

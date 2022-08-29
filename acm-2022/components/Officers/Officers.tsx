@@ -12,15 +12,18 @@ const Officers = () => {
                 <AnimatePresence>
                     {/* iterate and render all officers with framer motion */}
                     {officers.map((officer) => (
-                        <OfficerCard
-                            key={officer.name}
-                            name={officer.name}
-                            image={officer.image}
-                            position={officer.position}
-                            github={officer.github}
-                            linkedin={officer.linkedin}
-                            website={officer.website}
-                        />
+                        <>
+                            <OfficerCard
+                                key={officer.name}
+                                name={officer.name}
+                                image={officer.image}
+                                position={officer.position}
+                                github={officer.github}
+                                linkedin={officer.linkedin}
+                                website={officer.website}
+                            />
+                            <br />
+                        </>
                     ))}
                 </AnimatePresence>
             </motion.div>
