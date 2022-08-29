@@ -15,7 +15,7 @@ const LandingPage = () => {
             <div id="title__container" style={{
                 left: "50%",
                 transform: "translate(-50%, -50%)"
-            }} className="relative flex-col flex items-center justify-center w-auto text-white text-xs top-[40%] lg:top-[30%]">
+            }} className="relative flex-col flex items-center justify-center w-auto text-white text-xs top-[40%]">
                 <Typography variant="h1" className="">ACM</Typography>
                 <div id="desktop_contents__container" style={{
 
@@ -39,7 +39,7 @@ const LandingPage = () => {
                     left: "50%",
                     transform: "translate(-50%, -50%)"
                 }} >
-                <Typography className="mb-10" variant="h6">CONNECT WITH US ON</Typography>
+                <Typography className="mb-10 lg:mb-4" variant="h6">CONNECT WITH US ON</Typography>
                 <SocialMedia/>
             </div>
         </div>
