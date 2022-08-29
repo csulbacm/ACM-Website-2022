@@ -4,6 +4,7 @@ import Test from '../components/Navbar/Navbar';
 import Sponsors from '../components/Sponsors/Sponsors';
 import Officers from '../components/Officers/Officers';
 import Socials from '../components/Socials/Socials';
+import Footer from '../components/Footer/Footer';
 
 const Home: NextPage = () => {
     return (
@@ -15,6 +16,8 @@ const Home: NextPage = () => {
                 <Officers />
                 <hr />
                 <Socials />
+                <hr />
+                <Footer />
             </div>
         </>
     );
