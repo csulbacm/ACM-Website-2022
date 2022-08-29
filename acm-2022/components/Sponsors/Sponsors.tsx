@@ -26,7 +26,7 @@ const sponsors = [
 // create a container for to display multiple card components
 export default function SponsorContainer() {
     return (
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-5">
             {sponsors.map((sponsor) => (
                 <CardComponent
                     key={sponsor.id}
@@ -49,7 +49,7 @@ function CardComponent(props: {
     imageUrl: string;
 }) {
     return (
-        <Card className="w-20">
+        <Card className="md:w-full md:m-15 lg:w-1/3 m-10">
             <CardHeader color="blue" className="relative h-56">
                 <a
                     href={props.website}
