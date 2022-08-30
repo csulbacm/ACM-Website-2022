@@ -26,7 +26,8 @@
         "react-responsive-carousel": "^3.2.23",
         "react-tsparticles": "^2.2.4",
         "scroller-motion": "^1.2.0",
-        "tsparticles": "^2.2.4"
+        "tsparticles": "^2.2.4",
+        "yarn": "^1.22.19"
     },
     "devDependencies": {
         "@types/node": "18.6.3",

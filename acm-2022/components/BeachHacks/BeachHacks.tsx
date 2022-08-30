@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@material-tailwind/react';
 import Image from 'next/image';
 import CrabImg from '../../public/img/crab.png';
 const BeachHacks = () => {
