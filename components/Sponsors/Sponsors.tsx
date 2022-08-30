@@ -5,7 +5,6 @@ import {
     CardFooter,
     Typography,
 } from '@material-tailwind/react';
-import Image from 'next/image';
 
 const sponsors = [
     {
@@ -62,11 +61,10 @@ function CardComponent(props: {
                     target="blank"
                     rel="noopener noreferrer"
                 >
-                    <Image
+                    <img
                         src={props.imageUrl}
                         alt="img-blur-shadow"
                         className="h-full w-full"
-                        layout="fill"
                     />
                 </a>
             </CardHeader>
