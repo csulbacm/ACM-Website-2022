@@ -5,6 +5,7 @@ import {
     CardFooter,
     Typography,
 } from '@material-tailwind/react';
+import Image from 'next/image';
 
 const sponsors = [
     {
@@ -13,30 +14,35 @@ const sponsors = [
         description:
             'Bisect Hosting is a hosting company that offers affordable and reliable hosting services for your website.',
         website: 'https://bisecthosting.com/',
-        imageUrl: '/public/images/sponsors/bisect.png',
+        imageUrl: '/bisect.png',
     },
     {
         id: 2,
         name: 'Your Company name here...',
         description: 'Your description here...',
-        website: 'https://yourcompany.com/',
-        imageUrl: '/public/img/sponsors/your-company.png',
+        website: 'https://csulb.acm.org/',
+        imageUrl: '/placeholder.webp',
     },
 ];
 // create a container for to display multiple card components
 export default function SponsorContainer() {
     return (
-        <div className="flex flex-wrap justify-center">
-            {sponsors.map((sponsor) => (
-                <CardComponent
-                    key={sponsor.id}
-                    id={sponsor.id}
-                    name={sponsor.name}
-                    description={sponsor.description}
-                    website={sponsor.website}
-                    imageUrl={sponsor.imageUrl}
-                />
-            ))}
+        <div className="flex flex-col justify-center items-center sponsorsContainer">
+            <Typography variant="h1" color="blue-gray" className="mb-2">
+                Sponsors
+            </Typography>
+            <div className="flex flex-wrap justify-center gap-5">
+                {sponsors.map((sponsor) => (
+                    <CardComponent
+                        key={sponsor.id}
+                        id={sponsor.id}
+                        name={sponsor.name}
+                        description={sponsor.description}
+                        website={sponsor.website}
+                        imageUrl={sponsor.imageUrl}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
@@ -49,17 +55,18 @@ function CardComponent(props: {
     imageUrl: string;
 }) {
     return (
-        <Card className="w-20">
+        <Card className="md:w-full md:m-15 lg:w-1/3 m-10">
             <CardHeader color="blue" className="relative h-56">
                 <a
                     href={props.website}
-                    target="_blank"
+                    target="blank"
                     rel="noopener noreferrer"
                 >
-                    <img
+                    <Image
                         src={props.imageUrl}
                         alt="img-blur-shadow"
                         className="h-full w-full"
+                        layout="fill"
                     />
                 </a>
             </CardHeader>

@@ -5,7 +5,17 @@ import {
     CardFooter,
     Typography,
     Tooltip,
+    IconButton,
 } from '@material-tailwind/react';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedinIcon from '@mui/icons-material/LinkedIn';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import { GitHub } from '@mui/icons-material';
+import Image from 'next/image';
+
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
     name: string;
@@ -14,7 +24,9 @@ interface Props {
     github: string;
     linkedin: string;
     website: string;
+    key: number;
 }
+
 // OfficerCard is a component that displays the information of an officer
 export default function OfficerCard({
     name,
@@ -23,18 +35,21 @@ export default function OfficerCard({
     github,
     linkedin,
     website,
+    key,
 }: Props) {
     return (
-        <Card className="w-80">
-            <CardHeader floated={false} className="h-80">
-                <img
-                    src={'public/officers/' + { image }}
+        <Card className="w-80 !backdrop-blur-md">
+            <CardHeader floated={false} className="">
+                <Image
+                    src={`/${image}`}
                     alt="profile-picture"
+                    height={'350px'}
+                    width={'350px'}
                 />
             </CardHeader>
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-2">
-                    <a href={website} target="_blank" rel="noreferrer">
+                    <a href={website} target="blank" rel="noreferrer">
                         {name}
                     </a>
                 </Typography>
@@ -43,40 +58,45 @@ export default function OfficerCard({
                 </Typography>
             </CardBody>
             <CardFooter className="flex justify-center gap-7 pt-2">
-                <Tooltip content="Follow">
-                    <Typography
-                        as="a"
-                        href={github}
-                        variant="lead"
-                        color="light-blue"
-                        textGradient
-                    >
-                        <i className="fab fa-github" />
-                    </Typography>
-                </Tooltip>
-                <Tooltip content="Like">
-                    <Typography
-                        as="a"
-                        href={linkedin}
-                        variant="lead"
-                        color="blue"
-                        textGradient
-                    >
-                        <i className="fab fa-linkedin" />
-                    </Typography>
-                </Tooltip>
-
-                <Tooltip content="Follow">
-                    <Typography
-                        as="a"
-                        href="#instagram"
-                        variant="lead"
-                        color="purple"
-                        textGradient
-                    >
-                        <i className="fab fa-instagram" />
-                    </Typography>
-                </Tooltip>
+                {github !== '' ? (
+                    <Tooltip content="Github">
+                        <IconButton color="blue-gray">
+                            <a
+                                href={github}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <GitHub />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
+                {linkedin !== '' ? (
+                    <Tooltip content="LinkedIn">
+                        <IconButton>
+                            <a
+                                href={linkedin}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <LinkedinIcon />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
+                {website !== '' ? (
+                    <Tooltip content="Website">
+                        <IconButton color="teal">
+                            <a
+                                href={website}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <TerminalIcon />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
             </CardFooter>
         </Card>
     );
