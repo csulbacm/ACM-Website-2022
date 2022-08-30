@@ -7,7 +7,14 @@ module.exports = withMT({
         './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            height:{
+                '60': '60vh',
+                '70': '70vh',
+                '75': '75vh',
+                '80': '80vh'
+            }
+        },
     },
     plugins: [],
 });

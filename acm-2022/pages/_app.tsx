@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import '../styles/pagesContainer.css';
+import '../styles/particles.css';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-tailwind/react';
 
