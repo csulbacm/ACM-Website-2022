@@ -36,15 +36,17 @@ export default function OfficerCard({
 }: Props) {
     return (
         <Card className="w-80">
-            <CardHeader floated={false} className="h-80">
+            <CardHeader floated={false} className="">
                 <img
                     src={'public/officers/' + { image }}
                     alt="profile-picture"
+                    height={'200px'}
+                    width={'200px'}
                 />
             </CardHeader>
             <CardBody className="text-center">
                 <Typography variant="h4" color="blue-gray" className="mb-2">
-                    <a href={website} target="_blank" rel="noreferrer">
+                    <a href={website} target="blank" rel="noreferrer">
                         {name}
                     </a>
                 </Typography>

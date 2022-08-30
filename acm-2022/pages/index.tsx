@@ -14,11 +14,10 @@ const Home: NextPage = () => {
             <div className={styles.main}>
                 <Test />
                 <About />
-                <LandingPage/>
+                <LandingPage />
                 <hr />
                 <Officers />
-                <hr />
-                <Socials />
+
                 <hr />
                 <Sponsors />
                 <hr />
