@@ -23,34 +23,34 @@ const Home: NextPage = () => {
         damping: 30,
         restDelta: 0.001,
     });
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            setMousePosition({ x: e.clientX - 16, y: e.clientY - 16 });
-        };
-        window.addEventListener('mousemove', handleMouseMove);
+    // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    // useEffect(() => {
+    //     const handleMouseMove = (e: MouseEvent) => {
+    //         setMousePosition({ x: e.clientX - 16, y: e.clientY - 16 });
+    //     };
+    //     window.addEventListener('mousemove', handleMouseMove);
 
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, [mousePosition]);
-    const cursorVariants = {
-        default: {
-            x: mousePosition.x,
-            y: mousePosition.y,
-        },
-    };
+    //     return () => {
+    //         window.removeEventListener('mousemove', handleMouseMove);
+    //     };
+    // }, [mousePosition]);
+    // const cursorVariants = {
+    //     default: {
+    //         x: mousePosition.x,
+    //         y: mousePosition.y,
+    //     },
+    // };
     return (
         <>
             <div className={styles.main}>
                 <motion.div className="progress-bar" style={{ scaleX }}>
                     <p>test</p>
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                     className="cursor"
                     variants={cursorVariants}
                     animate="default"
-                />
+                /> */}
                 <Test />
                 <Suspense fallback={<div>Loading...</div>}>
                     <LandingPage />
