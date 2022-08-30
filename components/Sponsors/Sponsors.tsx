@@ -23,7 +23,7 @@ const sponsors = [
         imageUrl: '/placeholder.webp',
     },
 ];
-// create a container for to display multiple card components
+// create a container for to display multiple card componen<imgts
 export default function SponsorContainer() {
     return (
         <div className="flex flex-col justify-center items-center sponsorsContainer">

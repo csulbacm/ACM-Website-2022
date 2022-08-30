@@ -45,7 +45,7 @@ export default function Test() {
 
     return (
         // <div className="navContainer w-full">
-        <Navbar className="sticky top-5 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 ">
+        <Navbar className="sticky top-2.5 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 ">
             <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
@@ -61,7 +61,12 @@ export default function Test() {
                     size="sm"
                     className="hidden lg:inline-block"
                 >
-                    <span>CONNECT</span>
+                    <a
+                        href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
+                        target="blank"
+                    >
+                        APPLY NOW!
+                    </a>
                 </Button>
                 <IconButton
                     variant="text"
@@ -104,7 +109,12 @@ export default function Test() {
             <MobileNav open={openNav}>
                 {navList}
                 <Button variant="gradient" size="sm" fullWidth className="mb-2">
-                    <span>CONNECT</span>
+                    <a
+                        href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
+                        target="blank"
+                    >
+                        APPLY NOW!
+                    </a>
                 </Button>
             </MobileNav>
         </Navbar>

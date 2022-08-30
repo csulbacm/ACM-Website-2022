@@ -43,9 +43,8 @@ const Home: NextPage = () => {
     return (
         <>
             <div className={styles.main}>
-                <motion.div className="progress-bar" style={{ scaleX }}>
-                    <p>test</p>
-                </motion.div>
+                <motion.div className="progress-bar" style={{ scaleX }} />
+
                 {/* <motion.div
                     className="cursor"
                     variants={cursorVariants}
