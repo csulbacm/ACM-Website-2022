@@ -9,7 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 
 const About = () => {
     return (
-        <div className="w-full flex flex-col justify-center items-center aboutContainer m-15 p-15">
+        <div className="sm:w-full lg:w-4/5 flex flex-col justify-center items-center aboutContainer m-15 p-15">
             <Typography variant="h1" color="blue-gray" className="mb-2">
                 About
             </Typography>
@@ -43,17 +43,22 @@ const About = () => {
                     />
                 </div>
             </Carousel>
+            <br />
             {/* Generate a positive paragraph about the purpose, goal, and missions of ACM at CSULB */}
-            <Typography variant="body1" color="gray-800" className="mb-2">
+            <Typography
+                variant="body1"
+                color="gray-800"
+                className="mb-2 w-1/2 text-black"
+            >
                 The Association for Computing Machinery (ACM) is a Student-Run,
-                Professional Computer Science Organization here at CSULB. We are
-                a group of students who are passionate about computer science
-                and the technology that we use to solve problems.
+                Professional Computer Science Organization here CSULB. We are a
+                group of students who are passionate about computer science and
+                the technology that we use to solve problems.
             </Typography>
             {/* three main sections and subtexts: Coding, Connecting, and Contributing*/}
-            <div className="w-full flex flex-wrap justify-around items-center gap-20 ">
-                <div className="flex flex-col items-center justify-center w-1/3">
-                    <Typography variant="h2" color="gray-800" className="mb-2">
+            <div className="w-full flex flex-wrap justify-around items-center gap-20 text-black">
+                <div className="flex flex-col items-center justify-center w-2/5">
+                    <Typography variant="h3" color="gray-800" className="mb-2">
                         Coding
                     </Typography>
                     <CodeIcon className=" mb-2" fontSize="large" />
@@ -66,22 +71,22 @@ const About = () => {
                         mentorship from other students.
                     </Typography>
                 </div>
-                <div className="flex flex-col items-center justify-center w-1/3">
-                    <Typography variant="h2" color="gray-800" className="mb-2">
+                <div className="flex flex-col items-center justify-center w-2/5">
+                    <Typography variant="h3" color="gray-800" className="mb-2">
                         Connecting
                     </Typography>
                     <RssFeedIcon className="mb-2" fontSize="large" />
                     <Typography
                         variant="body1"
                         color="gray-800"
-                        className="mb-2"
+                        className="mb-2 w-full"
                     >
                         Connect with students and Professional Representitives
                         from companies like Google, Apple, and many more!
                     </Typography>
                 </div>
-                <div className="flex flex-col items-center justify-center w-1/3">
-                    <Typography variant="h2" color="gray-800" className="mb-2">
+                <div className="flex flex-col items-center justify-center w-2/5">
+                    <Typography variant="h3" color="gray-800" className="mb-2">
                         Contributing
                     </Typography>
                     <SettingsIcon className="mb-2" fontSize="large" />

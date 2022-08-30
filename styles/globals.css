@@ -43,12 +43,7 @@ a {
   background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
 }
-.flashing{
-  animation: flashing 1s infinite;
-}
-.navContainer{
-  
-}
+
 .sponsorsContainer{
   border: 3px solid black;
   border-radius: 15px;
@@ -71,13 +66,22 @@ a {
   padding: 15px;
   margin: 15px;
 }
-.progress-bar{
+
+.progress-bar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 10px;
-  background: var(--red);
+  
   transform-origin: 0%;
+  z-index: 100;
+  background: #5C258D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 /* .cursor{
   background-color: #111;
   height: 32px;
@@ -91,13 +95,11 @@ a {
 } */
 .aboutContainer{
   background: hsla(18, 76%, 85%, 1);
-
-background: linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -moz-linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -webkit-linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+  background: linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+  background: -moz-linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+  background: -webkit-linear-gradient(180deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
   border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
 }
