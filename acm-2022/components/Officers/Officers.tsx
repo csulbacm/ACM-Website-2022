@@ -6,7 +6,7 @@ import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 const Officers = () => {
     return (
         <>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center officerContainer shadow-2xl">
                 <Typography variant="h1">Officers</Typography>
                 <br />
                 <motion.div
@@ -45,7 +45,7 @@ const officers = [
     },
     {
         name: 'Brenden Smith',
-        image: 'brenden.jpg',
+        image: 'elbee.png',
         position: 'President',
         github: 'https://github.com/Brenden-Smith',
         linkedin: 'https://www.linkedin.com/in/brenden-s-smith/',
@@ -72,7 +72,7 @@ const officers = [
     },
     {
         name: 'Peter Pham',
-        image: 'peter.jpg',
+        image: 'elbee.png',
         position: 'Recruitment',
         github: 'https://github.com/pmpham',
         linkedin: 'https://www.linkedin.com/in/peterminhpham/',
@@ -81,20 +81,20 @@ const officers = [
     },
     {
         name: 'Ben Kweon',
-        image: 'ben.jpg',
+        image: 'elbee.png',
         position: 'Webmaster',
         github: '',
         linkedin: '',
-        website: '',
+        website: 'https://github.com/ben9543',
         index: 5,
     },
     {
         name: 'Stephen Lyons',
-        image: 'stephen.jpg',
+        image: 'elbee.png',
         position: 'Webmaster',
-        github: '',
-        linkedin: '',
-        website: '',
+        github: 'https://github.com/stephenlyons18',
+        linkedin: 'https://www.linkedin.com/in/stephen-lyons/',
+        website: 'https://stephenlyons.dev',
         index: 6,
     },
     {
@@ -102,13 +102,13 @@ const officers = [
         image: 'lydia.jpg',
         position: 'AESB Representative',
         github: '',
-        linkedin: '',
+        linkedin: 'linkedin.com/in/lydia-yang-1028',
         website: '',
         index: 7,
     },
     {
         name: 'Jasmine San Juan',
-        image: 'jasmine.jpg',
+        image: 'elbee.png',
         position: 'Media Design',
         github: 'https://github.com/anarchopossum',
         linkedin: 'https://www.linkedin.com/in/jasminesj/',
@@ -117,7 +117,7 @@ const officers = [
     },
     {
         name: 'Daniel Hernandez',
-        image: 'daniel.jpg',
+        image: 'daniel2.jpg',
         position: 'Media Design',
         github: 'https://github.com/Danny4277',
         linkedin: 'https://www.linkedin.com/in/daniel-hernandez-1a5409238',
@@ -126,7 +126,7 @@ const officers = [
     },
     {
         name: 'Grant Smith',
-        image: 'grant.jpg',
+        image: 'elbee.png',
         position: 'Fundraising',
         github: 'https://github.com/grantsmith01/',
         linkedin: 'https://www.linkedin.com/in/grant-smith-swe/',

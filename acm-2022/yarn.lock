@@ -278,10 +278,10 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@material-tailwind/react@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/@material-tailwind/react/-/react-1.2.2.tgz"
-  integrity sha512-JgkGyHLrcDUTIdqqBIX4wtFd9TwuonF9hkxk3fwdxNltXILWPUB5gjcQrn+u3J8ZtA0J1F49N1Ehx97DSlFr/g==
+"@material-tailwind/react@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@material-tailwind/react/-/react-1.2.3.tgz#7192b7e61669c38a457425b553286fd846ab7594"
+  integrity sha512-lwK0X1CZ2CtLiZF7SXgXDWDRffwOo87aXpCPmTWHfkIhdAb0SUbF09UGsNoRVgBBjPFp6lg0c/z6lr/Zss7mqg==
   dependencies:
     "@floating-ui/react-dom-interactions" "^0.8.1"
     classnames "^2.3.1"
@@ -1025,6 +1025,13 @@ damerau-levenshtein@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
+
+debounce-fn@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/debounce-fn/-/debounce-fn-4.0.0.tgz#ed76d206d8a50e60de0dd66d494d82835ffe61c7"
+  integrity sha512-8pYCQiL9Xdcg0UPSD3d+0KMlOjp+KGU5EPwYddgzQ7DATsg4fuUDjQtsYLmWjnk2obnNHgV3vE2Y4jejSOJVBQ==
+  dependencies:
+    mimic-fn "^3.0.0"
 
 debug@^2.6.9:
   version "2.6.9"
@@ -2067,6 +2074,11 @@ micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
+mimic-fn@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-3.1.0.tgz#65755145bbf3e36954b949c16450427451d5ca74"
+  integrity sha512-Ysbi9uYW9hFyfrThdDEQuykN4Ey6BuwPD2kpI5ES/nFTDn/98yxYNLZJcgUAKPT/mcrLLKaGzJR9YVxJrIdASQ==
+
 minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
@@ -2609,6 +2621,13 @@ scheduler@^0.23.0:
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
+
+scroller-motion@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/scroller-motion/-/scroller-motion-1.2.0.tgz#f4ce873e4c076f835f46e518cfdae95712e85bc2"
+  integrity sha512-oXDEJnneB96sXMeZywCujMRZJx5UVGnDt2p+eer7P9BBv3d6p0vMCiR2FPXHFwA8oeZ/p4nhXJv2uN9V6iOS9A==
+  dependencies:
+    debounce-fn "^4.0.0"
 
 semver@^6.0.0, semver@^6.3.0:
   version "6.3.0"

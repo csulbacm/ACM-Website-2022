@@ -15,6 +15,7 @@ import LinkedinIcon from '@mui/icons-material/LinkedIn';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import { GitHub } from '@mui/icons-material';
 import Image from 'next/image';
+
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
     name: string;
@@ -25,6 +26,7 @@ interface Props {
     website: string;
     key: number;
 }
+
 // OfficerCard is a component that displays the information of an officer
 export default function OfficerCard({
     name,
@@ -36,13 +38,13 @@ export default function OfficerCard({
     key,
 }: Props) {
     return (
-        <Card className="w-80">
+        <Card className="w-80 !backdrop-blur-md">
             <CardHeader floated={false} className="">
                 <Image
-                    src={'public/officers/' + { image }}
+                    src={`/${image}`}
                     alt="profile-picture"
-                    height={'200px'}
-                    width={'200px'}
+                    height={'350px'}
+                    width={'350px'}
                 />
             </CardHeader>
             <CardBody className="text-center">
@@ -56,21 +58,45 @@ export default function OfficerCard({
                 </Typography>
             </CardBody>
             <CardFooter className="flex justify-center gap-7 pt-2">
-                <IconButton color="blue-gray">
-                    <a href={github} target="blank" rel="noopener noreferrer">
-                        <GitHub />
-                    </a>
-                </IconButton>
-                <IconButton>
-                    <a href={linkedin} target="blank" rel="noopener noreferrer">
-                        <LinkedinIcon />
-                    </a>
-                </IconButton>
-                <IconButton color="teal">
-                    <a href={website} target="blank" rel="noopener noreferrer">
-                        <TerminalIcon />
-                    </a>
-                </IconButton>
+                {github !== '' ? (
+                    <Tooltip content="Github">
+                        <IconButton color="blue-gray">
+                            <a
+                                href={github}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <GitHub />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
+                {linkedin !== '' ? (
+                    <Tooltip content="LinkedIn">
+                        <IconButton>
+                            <a
+                                href={linkedin}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <LinkedinIcon />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
+                {website !== '' ? (
+                    <Tooltip content="Website">
+                        <IconButton color="teal">
+                            <a
+                                href={website}
+                                target="blank"
+                                rel="noopener noreferrer"
+                            >
+                                <TerminalIcon />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
+                ) : null}
             </CardFooter>
         </Card>
     );

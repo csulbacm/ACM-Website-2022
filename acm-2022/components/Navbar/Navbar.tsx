@@ -6,6 +6,7 @@ import {
     Button,
     IconButton,
 } from '@material-tailwind/react';
+import Link from 'next/link';
 
 export default function Test() {
     const [openNav, setOpenNav] = useState(false);
@@ -18,36 +19,37 @@ export default function Test() {
     }, []);
 
     const navList = (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-black">
             <Typography as="li" variant="small" className="p-1 font-normal">
-                <a href="#" className="flex items-center">
+                <Link href="#about" className="flex items-center">
                     About
-                </a>
+                </Link>
             </Typography>
             <Typography as="li" variant="small" className="p-1 font-normal">
-                <a href="#" className="flex items-center">
-                    Events
-                </a>
-            </Typography>
-            <Typography as="li" variant="small" className="p-1 font-normal">
-                <a href="#" className="flex items-center">
-                    Sponsors
-                </a>
-            </Typography>
-            <Typography as="li" variant="small" className="p-1 font-normal">
-                <a href="#" className="flex items-center">
+                <Link href="#officers" className="flex items-center">
                     Team
-                </a>
+                </Link>
+            </Typography>
+            <Typography as="li" variant="small" className="p-1 font-normal">
+                <Link href="#events" className="flex items-center">
+                    Events
+                </Link>
+            </Typography>
+            <Typography as="li" variant="small" className="p-1 font-normal">
+                <Link href="#sponsors" className="flex items-center">
+                    Sponsors
+                </Link>
             </Typography>
         </ul>
     );
 
     return (
-        <Navbar className="sticky top-0 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
+        // <div className="navContainer w-full">
+        <Navbar className="sticky top-5 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 ">
             <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
-                    href="#"
+                    href="csulb.acm.org"
                     variant="small"
                     className="mr-4 cursor-pointer py-1.5 font-normal"
                 >
@@ -106,5 +108,6 @@ export default function Test() {
                 </Button>
             </MobileNav>
         </Navbar>
+        // </div>
     );
 }

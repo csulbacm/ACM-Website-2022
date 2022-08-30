@@ -14,20 +14,20 @@ const sponsors = [
         description:
             'Bisect Hosting is a hosting company that offers affordable and reliable hosting services for your website.',
         website: 'https://bisecthosting.com/',
-        imageUrl: '/public/images/sponsors/bisect.png',
+        imageUrl: '/bisect.png',
     },
     {
         id: 2,
         name: 'Your Company name here...',
         description: 'Your description here...',
         website: 'https://csulb.acm.org/',
-        imageUrl: '/public/img/sponsors/your-company.png',
+        imageUrl: '/placeholder.webp',
     },
 ];
 // create a container for to display multiple card components
 export default function SponsorContainer() {
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center sponsorsContainer">
             <Typography variant="h1" color="blue-gray" className="mb-2">
                 Sponsors
             </Typography>
@@ -66,8 +66,7 @@ function CardComponent(props: {
                         src={props.imageUrl}
                         alt="img-blur-shadow"
                         className="h-full w-full"
-                        height={'200px'}
-                        width={'200px'}
+                        layout="fill"
                     />
                 </a>
             </CardHeader>
