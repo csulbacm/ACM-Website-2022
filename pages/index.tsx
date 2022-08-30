@@ -6,7 +6,7 @@ import Officers from '../components/Officers/Officers';
 import Socials from '../components/Socials/Socials';
 import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
-import LandingPage from '../components/LandingPage';
+// import LandingPage from '../components/LandingPage';
 import dynamic from 'next/dynamic';
 import { Suspense, useEffect, useState } from 'react';
 import { ScrollerMotion } from 'scroller-motion';
@@ -52,9 +52,9 @@ const Home: NextPage = () => {
                     animate="default"
                 /> */}
                 <Test />
-                <Suspense fallback={<div>Loading...</div>}>
+                {/* <Suspense fallback={<div>Loading...</div>}>
                     <LandingPage />
-                </Suspense>
+                </Suspense> */}
                 <br />
                 <hr id="about" />
                 <About />
