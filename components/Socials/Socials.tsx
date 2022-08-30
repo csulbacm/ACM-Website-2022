@@ -5,8 +5,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitchIcon from '../../public/img/twitch.png';
-import DiscordIcon from '../../public/img/discord.svg';
-import Image from 'next/image';
+import DiscordIcon from '../../public/img/discord.png';
+
 import { IconButton, Tooltip } from '@material-tailwind/react';
 
 export const SocialsContainer = () => {
@@ -75,7 +75,7 @@ export const DiscordLink = () => {
                     target="blank"
                     rel="noopener noreferrer"
                 >
-                    <Image src={DiscordIcon} />
+                    <img src={DiscordIcon} />
                 </a>
             </IconButton>
         </Tooltip>

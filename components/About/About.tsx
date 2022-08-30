@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Image from 'next/image';
+
 import { Typography } from '@material-tailwind/react';
 import CodeIcon from '@mui/icons-material/Code';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
@@ -16,7 +16,7 @@ const About = () => {
 
             <Carousel autoPlay={true} showArrows={false} showThumbs={false}>
                 <div className="">
-                    <Image
+                    <img
                         src="/img1.jpg"
                         alt="/bg.jpeg"
                         width={'500'}
@@ -25,7 +25,7 @@ const About = () => {
                     />
                 </div>
                 <div>
-                    <Image
+                    <img
                         src="/img2.jpg"
                         alt="/bg.jpeg"
                         width={'500'}
@@ -34,7 +34,7 @@ const About = () => {
                     />
                 </div>
                 <div>
-                    <Image
+                    <img
                         src="/img3.jpg"
                         alt="/bg.jpeg"
                         width={'500'}

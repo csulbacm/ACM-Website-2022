@@ -14,7 +14,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedinIcon from '@mui/icons-material/LinkedIn';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import { GitHub } from '@mui/icons-material';
-import Image from 'next/image';
+
 
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
@@ -40,7 +40,7 @@ export default function OfficerCard({
     return (
         <Card className="w-80 !backdrop-blur-md">
             <CardHeader floated={false} className="">
-                <Image
+                <img
                     src={`/${image}`}
                     alt="profile-picture"
                     height={'350px'}
