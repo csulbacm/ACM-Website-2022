@@ -29,14 +29,14 @@ const LandingPage = () => {
                         style={{}}
                         className="flex flex-col items-center justify-center w-auto text-white text-xs p-6"
                     >
-                        <Typography variant="small" className="text-center">
+                        <Typography variant="paragraph" className="text-center">
                             Welcome to the Association for Computing Machinery
                             (ACM)
                         </Typography>
-                        <Typography variant="small" className="text-center">
+                        <Typography variant="paragraph" className="text-center">
                             @California State University, Long Beach!
                         </Typography>
-                        <Typography variant="small" className="text-center">
+                        <Typography variant="paragraph" className="text-center">
                             The ACM is the largest computer science student
                             organization in CSULB.
                         </Typography>
