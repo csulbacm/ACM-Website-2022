@@ -5,16 +5,19 @@ import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 
 const Officers = () => {
     return (
-        <div>
-            <Typography variant="h1">Officers</Typography>
+        <>
+            <div>
+                <Typography variant="h1">Officers</Typography>
 
-            <motion.div layout>
-                <AnimatePresence>
+                <div
+                    layout
+                    className="flex flex-wrap justify-center items-center gap-20 "
+                >
                     {/* iterate and render all officers with framer motion */}
                     {officers.map((officer) => (
                         <>
                             <OfficerCard
-                                key={officer.name}
+                                key={officer.index}
                                 name={officer.name}
                                 image={officer.image}
                                 position={officer.position}
@@ -22,12 +25,11 @@ const Officers = () => {
                                 linkedin={officer.linkedin}
                                 website={officer.website}
                             />
-                            <br />
                         </>
                     ))}
-                </AnimatePresence>
-            </motion.div>
-        </div>
+                </div>
+            </div>
+        </>
     );
 };
 
@@ -39,6 +41,7 @@ const officers = [
         github: 'https://github.com/johndoe',
         linkedin: 'https://linkedin.com/johndoe',
         website: 'https://johndoe.com',
+        index: 0,
     },
     {
         name: 'Jane Doe',
@@ -47,6 +50,7 @@ const officers = [
         github: 'https://github.com/janedoe',
         linkedin: 'https://linkedin.com/janedoe',
         website: 'https://janedoe.com',
+        index: 1,
     },
     {
         name: 'Joe Doe',
@@ -55,6 +59,7 @@ const officers = [
         github: 'https://github.com/joedoe',
         linkedin: 'https://linkedin.com/joedoe',
         website: 'https://joedoe.com',
+        index: 2,
     },
 ];
 

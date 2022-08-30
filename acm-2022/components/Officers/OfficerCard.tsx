@@ -5,7 +5,15 @@ import {
     CardFooter,
     Typography,
     Tooltip,
+    IconButton,
 } from '@material-tailwind/react';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedinIcon from '@mui/icons-material/LinkedIn';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import { GitHub } from '@mui/icons-material';
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
     name: string;
@@ -14,6 +22,7 @@ interface Props {
     github: string;
     linkedin: string;
     website: string;
+    key: number;
 }
 // OfficerCard is a component that displays the information of an officer
 export default function OfficerCard({
@@ -23,6 +32,7 @@ export default function OfficerCard({
     github,
     linkedin,
     website,
+    key,
 }: Props) {
     return (
         <Card className="w-80">
@@ -43,40 +53,21 @@ export default function OfficerCard({
                 </Typography>
             </CardBody>
             <CardFooter className="flex justify-center gap-7 pt-2">
-                <Tooltip content="Follow">
-                    <Typography
-                        as="a"
-                        href={github}
-                        variant="lead"
-                        color="light-blue"
-                        textGradient
-                    >
-                        <i className="fab fa-github" />
-                    </Typography>
-                </Tooltip>
-                <Tooltip content="Like">
-                    <Typography
-                        as="a"
-                        href={linkedin}
-                        variant="lead"
-                        color="blue"
-                        textGradient
-                    >
-                        <i className="fab fa-linkedin" />
-                    </Typography>
-                </Tooltip>
-
-                <Tooltip content="Follow">
-                    <Typography
-                        as="a"
-                        href="#instagram"
-                        variant="lead"
-                        color="purple"
-                        textGradient
-                    >
-                        <i className="fab fa-instagram" />
-                    </Typography>
-                </Tooltip>
+                <IconButton color="blue-gray">
+                    <a href={github} target="blank" rel="noopener noreferrer">
+                        <GitHub />
+                    </a>
+                </IconButton>
+                <IconButton>
+                    <a href={linkedin} target="blank" rel="noopener noreferrer">
+                        <LinkedinIcon />
+                    </a>
+                </IconButton>
+                <IconButton color="teal">
+                    <a href={website} target="blank" rel="noopener noreferrer">
+                        <TerminalIcon />
+                    </a>
+                </IconButton>
             </CardFooter>
         </Card>
     );
