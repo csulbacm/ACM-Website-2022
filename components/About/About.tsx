@@ -48,12 +48,19 @@ const About = () => {
             <Typography
                 variant="body1"
                 color="gray-800"
-                className="mb-2 w-1/2 text-black"
+                className="mb-2 w-3/4 text-black text-center"
             >
                 The Association for Computing Machinery (ACM) is a Student-Run,
-                Professional Computer Science Organization here CSULB. We are a
+                Professional Computer Science Organization at CSULB. We are a
                 group of students who are passionate about computer science and
                 the technology that we use to solve problems.
+                <br />
+                <br />
+                We also work to strengthen the bond between the students, the
+                faculty, and the Computer Engineering and Computer Science
+                (CECS) department. A stronger relationship between students and
+                their instructors engenders a friendly learning atmosphere.
+                <br />
             </Typography>
             {/* three main sections and subtexts: Coding, Connecting, and Contributing*/}
             <div className="w-full flex flex-wrap justify-around items-center gap-20 text-black">
@@ -95,9 +102,11 @@ const About = () => {
                         color="gray-800"
                         className="mb-2"
                     >
-                        Contribute to ACM by participating in our events,
-                        volunteering, and mentoring other students in our many
-                        events throughout the year, including a Hackathon!
+                        We are determined to advance the science and application
+                        of information technology by providing students with
+                        real world information through guest speakers,
+                        workshops, seminars, Hackathons, projects, and other
+                        activities!
                     </Typography>
                 </div>
             </div>

@@ -71,6 +71,15 @@ const officers = [
         index: 3,
     },
     {
+        name: 'Chloe Gong',
+        image: 'chloe.png',
+        position: 'Treasurer',
+        github: 'https://github.com/chloeegong',
+        linkedin: 'https://www.linkedin.com/in/chloeeg/',
+        website: '',
+        index: 11,
+    },
+    {
         name: 'Peter Pham',
         image: 'elbee.png',
         position: 'Recruitment',
