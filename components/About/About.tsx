@@ -48,7 +48,7 @@ const About = () => {
             <Typography
                 variant="body1"
                 color="gray-800"
-                className="mb-2 w-3/4 text-black text-center"
+                className="mb-2 w-3/4 text-black text-center my-5"
             >
                 The Association for Computing Machinery (ACM) is a Student-Run,
                 Professional Computer Science Organization at CSULB. We are a
@@ -60,7 +60,6 @@ const About = () => {
                 faculty, and the Computer Engineering and Computer Science
                 (CECS) department. A stronger relationship between students and
                 their instructors engenders a friendly learning atmosphere.
-                <br />
             </Typography>
             {/* three main sections and subtexts: Coding, Connecting, and Contributing*/}
             <div className="w-full flex flex-wrap justify-around items-center gap-20 text-black">
