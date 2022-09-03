@@ -15,7 +15,6 @@ import LinkedinIcon from '@mui/icons-material/LinkedIn';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import { GitHub } from '@mui/icons-material';
 
-
 // recieves props from the parent component of: Name, Email, Image URL, Position, Github, LinkedIn, Website URL
 interface Props {
     name: string;
@@ -24,6 +23,7 @@ interface Props {
     github: string;
     linkedin: string;
     website: string;
+    pronouns: string;
     key: number;
 }
 
@@ -35,11 +35,12 @@ export default function OfficerCard({
     github,
     linkedin,
     website,
+    pronouns,
     key,
 }: Props) {
     return (
         <Card className="w-80 !backdrop-blur-md">
-            <CardHeader floated={false} className="">
+            <CardHeader floated={false} className="rounded-none">
                 <img
                     src={`/${image}`}
                     alt="profile-picture"
@@ -52,6 +53,9 @@ export default function OfficerCard({
                     <a href={website} target="blank" rel="noreferrer">
                         {name}
                     </a>
+                </Typography>
+                <Typography variant="body" color="blue-gray" className="mb-2">
+                    ({pronouns})
                 </Typography>
                 <Typography color="blue" className="font-medium" textGradient>
                     {position}

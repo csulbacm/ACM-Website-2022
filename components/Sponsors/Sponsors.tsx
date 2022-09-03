@@ -27,7 +27,7 @@ const sponsors = [
 export default function SponsorContainer() {
     return (
         <div className="flex flex-col justify-center items-center sponsorsContainer">
-            <Typography variant="h1" color="blue-gray" className="mb-2">
+            <Typography variant="h1" color="white" className="mb-2">
                 Sponsors
             </Typography>
             <div className="flex flex-wrap justify-center gap-5">
