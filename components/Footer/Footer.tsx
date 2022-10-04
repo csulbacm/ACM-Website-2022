@@ -32,6 +32,12 @@ const Footer = () => {
                         <br />
                         <Typography className="text-gray-300 text-center ">
                             &copy; {new Date().getFullYear()} CSULB ACM
+                            <br />
+                            1250 Bellflower Blvd
+                            <br />
+                            Long Beach, CA 90840
+                            <br />
+                            EN3-118
                         </Typography>
                     </div>
                 </div>

@@ -5,7 +5,6 @@ import {
     CardFooter,
     Typography,
 } from '@material-tailwind/react';
-import Image from 'next/image';
 
 const sponsors = [
     {
@@ -24,11 +23,11 @@ const sponsors = [
         imageUrl: '/placeholder.webp',
     },
 ];
-// create a container for to display multiple card components
+// create a container for to display multiple card componen<imgts
 export default function SponsorContainer() {
     return (
         <div className="flex flex-col justify-center items-center sponsorsContainer">
-            <Typography variant="h1" color="blue-gray" className="mb-2">
+            <Typography variant="h1" color="white" className="mb-2">
                 Sponsors
             </Typography>
             <div className="flex flex-wrap justify-center gap-5">
@@ -62,11 +61,10 @@ function CardComponent(props: {
                     target="blank"
                     rel="noopener noreferrer"
                 >
-                    <Image
+                    <img
                         src={props.imageUrl}
                         alt="img-blur-shadow"
                         className="h-full w-full"
-                        layout="fill"
                     />
                 </a>
             </CardHeader>

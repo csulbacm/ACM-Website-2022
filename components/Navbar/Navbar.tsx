@@ -45,23 +45,27 @@ export default function Test() {
 
     return (
         // <div className="navContainer w-full">
-        <Navbar className="sticky top-5 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 ">
+        <Navbar className="sticky top-2.5 z-50 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 ">
             <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-                <Typography
-                    as="a"
-                    href="csulb.acm.org"
-                    variant="small"
-                    className="mr-4 cursor-pointer py-1.5 font-normal"
-                >
-                    <span>CSULB ACM</span>
-                </Typography>
+                <div className="flex flex-row items-center justify-center">
+                    <img src="acm.png" alt="ACM" className="w-8 h-8" />
+
+                    <Typography variant="h5" className="ml-2">
+                        CSULB ACM
+                    </Typography>
+                </div>
                 <div className="hidden lg:block">{navList}</div>
                 <Button
                     variant="gradient"
                     size="sm"
                     className="hidden lg:inline-block"
                 >
-                    <span>CONNECT</span>
+                    <a
+                        href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
+                        target="blank"
+                    >
+                        APPLY NOW!
+                    </a>
                 </Button>
                 <IconButton
                     variant="text"
@@ -104,7 +108,12 @@ export default function Test() {
             <MobileNav open={openNav}>
                 {navList}
                 <Button variant="gradient" size="sm" fullWidth className="mb-2">
-                    <span>CONNECT</span>
+                    <a
+                        href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
+                        target="blank"
+                    >
+                        APPLY NOW!
+                    </a>
                 </Button>
             </MobileNav>
         </Navbar>

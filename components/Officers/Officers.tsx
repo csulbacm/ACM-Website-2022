@@ -24,6 +24,7 @@ const Officers = () => {
                                 github={officer.github}
                                 linkedin={officer.linkedin}
                                 website={officer.website}
+                                pronouns={officer.pronouns}
                             />
                         </>
                     ))}
@@ -41,6 +42,7 @@ const officers = [
         github: 'https://github.com/RudySPG',
         linkedin: 'https://www.linkedin.com/in/rudyspg',
         website: '',
+        pronouns: 'he/him',
         index: 0,
     },
     {
@@ -50,6 +52,7 @@ const officers = [
         github: 'https://github.com/Brenden-Smith',
         linkedin: 'https://www.linkedin.com/in/brenden-s-smith/',
         website: 'https://brenden-smith.com/',
+        pronouns: 'he/him',
         index: 1,
     },
     {
@@ -59,6 +62,7 @@ const officers = [
         github: 'https://github.com/jordanhilado',
         linkedin: 'https://www.linkedin.com/in/jordanhilado/',
         website: 'https://jordanhilado.com/',
+        pronouns: 'he/him',
         index: 2,
     },
     {
@@ -67,8 +71,19 @@ const officers = [
         position: 'Secretary',
         github: 'https://github.com/danielskjo',
         linkedin: 'https://www.linkedin.com/in/danielskjo/',
-        website: 'https://danielskjo.com/',
+        website: '',
+        pronouns: 'he/him',
         index: 3,
+    },
+    {
+        name: 'Chloe Gong',
+        image: 'chloe.png',
+        position: 'Treasurer',
+        github: 'https://github.com/chloeegong',
+        linkedin: 'https://www.linkedin.com/in/chloeeg/',
+        website: '',
+        pronouns: 'she/her',
+        index: 11,
     },
     {
         name: 'Peter Pham',
@@ -77,6 +92,7 @@ const officers = [
         github: 'https://github.com/pmpham',
         linkedin: 'https://www.linkedin.com/in/peterminhpham/',
         website: '',
+        pronouns: 'he/him',
         index: 4,
     },
     {
@@ -86,6 +102,7 @@ const officers = [
         github: '',
         linkedin: '',
         website: 'https://github.com/ben9543',
+        pronouns: 'he/him',
         index: 5,
     },
     {
@@ -95,6 +112,7 @@ const officers = [
         github: 'https://github.com/stephenlyons18',
         linkedin: 'https://www.linkedin.com/in/stephen-lyons/',
         website: 'https://stephenlyons.dev',
+        pronouns: 'he/him',
         index: 6,
     },
     {
@@ -104,6 +122,7 @@ const officers = [
         github: '',
         linkedin: 'linkedin.com/in/lydia-yang-1028',
         website: '',
+        pronouns: 'she/her',
         index: 7,
     },
     {
@@ -113,6 +132,7 @@ const officers = [
         github: 'https://github.com/anarchopossum',
         linkedin: 'https://www.linkedin.com/in/jasminesj/',
         website: '',
+        pronouns: 'she/her',
         index: 8,
     },
     {
@@ -122,6 +142,7 @@ const officers = [
         github: 'https://github.com/Danny4277',
         linkedin: 'https://www.linkedin.com/in/daniel-hernandez-1a5409238',
         website: '',
+        pronouns: 'he/him',
         index: 9,
     },
     {
@@ -131,7 +152,18 @@ const officers = [
         github: 'https://github.com/grantsmith01/',
         linkedin: 'https://www.linkedin.com/in/grant-smith-swe/',
         website: '',
+        pronouns: 'he/him',
         index: 10,
+    },
+    {
+        name: 'Katrina Orevillo',
+        image: 'elbee.png',
+        position: 'BeachHacks Director',
+        github: '',
+        linkedin: '',
+        website: '',
+        pronouns: 'she/her',
+        index: 12,
     },
 ];
 
