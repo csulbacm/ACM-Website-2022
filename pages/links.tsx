@@ -17,11 +17,13 @@ const Home = () => {
     );
 
     useEffect(() => {
-        fetch('/json/links.json').then((res) => {
+        fetch(
+            'https://raw.githubusercontent.com/csulbacm/ACM-Website-2022/main/public/json/links.json',
+        ).then((res) => {
             res.json().then((data) => {
                 setData(data);
             });
-        })
+        });
     }, []);
 
     return (
