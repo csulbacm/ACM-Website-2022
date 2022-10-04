@@ -36,7 +36,7 @@ const Home = () => {
                     >
                         <Avatar
                             sx={{ height: 100, width: 100 }}
-                            src="/acm.png"
+                            src="/logo.png"
                         />
                         <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                             CSULB ACM
@@ -63,7 +63,7 @@ const Home = () => {
                                 }}
                                 href={item.url}
                                 target="_blank"
-                                disabled={item.title.includes('Coming Soon')}
+                                disabled={!item.enabled}
                             >
                                 {item.title}
                             </Button>

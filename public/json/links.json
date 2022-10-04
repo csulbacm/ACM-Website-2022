@@ -1,14 +1,22 @@
 [
     {
         "title": "Website",
-        "url": "https://csulb.acm.org"
+        "url": "https://csulb.acm.org",
+        "enabled": true
+    },
+    {
+        "title": "Membership Form",
+        "url": "https://csulb.campuslabs.com/engage/submitter/form/start/545578",
+        "enabled": true
     },
     {
         "title": "Hacktoberfest @ The Beach",
-        "url": "https://csulbacm.github.io/hacktoberfest"
+        "url": "https://csulbacm.github.io/hacktoberfest",
+        "enabled": true
     },
     {
       "title": "BeachHacks 2023 (Coming Soon)",
-      "url": "https://beachhacks.com"
+      "url": "https://beachhacks.com",
+      "enabled": false
     }
 ]
