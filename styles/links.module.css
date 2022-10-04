@@ -1,0 +1,37 @@
+.container {
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #f5f5f5 0%, #0f0f0f 100%);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
