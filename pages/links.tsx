@@ -4,7 +4,7 @@ import SocialsContainer from '../components/Socials/Socials';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
-const Home = () => {
+const Links = () => {
     const [data, setData] = useState([]);
     const ShareIcon = dynamic(
         () =>
@@ -77,4 +77,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Links;
