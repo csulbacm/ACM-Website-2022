@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Test from '../components/Navbar/Navbar';
 import Sponsors from '../components/Sponsors/Sponsors';
 import Officers from '../components/Officers/Officers';
+import EventsContainer from '../components/Events/EventsContainer';
 import Socials from '../components/Socials/Socials';
 import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
@@ -61,11 +62,13 @@ const Home: NextPage = () => {
                 <hr id="officers" />
                 <Officers />
                 <br />
+                <hr id="events" />
+                <EventsContainer />
+                <br />
                 <hr id="sponsors" />
                 <Sponsors />
                 <br />
-                <hr id="events" />
-                {/* add events */}
+                <hr id="footer" />
                 <Footer />
             </div>
         </>
