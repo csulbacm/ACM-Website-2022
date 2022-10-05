@@ -46,7 +46,7 @@ const About = () => {
             <br />
             {/* Generate a positive paragraph about the purpose, goal, and missions of ACM at CSULB */}
             <Typography
-                variant="body1"
+                variant="paragraph"
                 color="gray-800"
                 className="mb-2 w-3/4 text-black text-center my-5"
             >
@@ -69,7 +69,7 @@ const About = () => {
                     </Typography>
                     <CodeIcon className=" mb-2" fontSize="large" />
                     <Typography
-                        variant="body1"
+                        variant="paragraph"
                         color="gray-800"
                         className="mb-2"
                     >
@@ -83,7 +83,7 @@ const About = () => {
                     </Typography>
                     <RssFeedIcon className="mb-2" fontSize="large" />
                     <Typography
-                        variant="body1"
+                        variant="paragraph"
                         color="gray-800"
                         className="mb-2 w-full"
                     >
@@ -97,7 +97,7 @@ const About = () => {
                     </Typography>
                     <SettingsIcon className="mb-2" fontSize="large" />
                     <Typography
-                        variant="body1"
+                        variant="paragraph"
                         color="gray-800"
                         className="mb-2"
                     >
