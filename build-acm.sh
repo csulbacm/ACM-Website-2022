@@ -1,2 +1,4 @@
 sudo yarn run build
-sudo zip -r acm-build-output.zip ./out 
+cd ./out 
+sudo zip -r acm-build-output.zip ./
+cd ..
