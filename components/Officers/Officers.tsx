@@ -160,10 +160,20 @@ const officers = [
         image: 'elbee.png',
         position: 'BeachHacks Director',
         github: '',
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/korevillo/',
         website: '',
         pronouns: 'she/her',
         index: 12,
+    },
+    {
+        name: 'Kelly Duangrudeeswat',
+        image: 'elbee.png',
+        position: 'Industry Chair',
+        github: '',
+        linkedin: 'https://www.linkedin.com/in/kellyduang/',
+        website: '',
+        pronouns: '',
+        index: 13,
     },
 ];
 
