@@ -47,7 +47,7 @@ const officers = [
     },
     {
         name: 'Brenden Smith',
-        image: 'elbee.png',
+        image: 'brenden.png',
         position: 'President',
         github: 'https://github.com/Brenden-Smith',
         linkedin: 'https://www.linkedin.com/in/brenden-s-smith/',
