@@ -17,6 +17,7 @@ const nextConfig = {
             '/hacktoberfest': { page: '/hacktoberfest' },
         };
     },
+    trailingSlash: true,
 };
 
 module.exports = nextConfig;
