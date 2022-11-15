@@ -64,9 +64,7 @@ const Home: NextPage = () => {
     //     },
     // };
     const loading = () => {
-        return (    
-            <div>Loading ...</div>
-        );
+        return <div>Loading ...</div>;
     };
     return (
         <>
@@ -79,25 +77,26 @@ const Home: NextPage = () => {
                     animate="default"
                 /> */}
                 <Test />
-                <Suspense fallback={loading}>
+                <Suspense fallback={loading()}>
                     <DynamicLandingPage />
                 </Suspense>
                 <br />
                 <hr id="about" />
                 <About />
-                <br />
-                <hr id="officers" />
-                <Suspense fallback={<div>Loading...</div>}>
-                    <DynamicOfficers />
-                </Suspense>
+
                 <br />
                 <hr id="events" />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={loading()}>
                     <DynamicEvents />
                 </Suspense>
                 <br />
+                <hr id="officers" />
+                <Suspense fallback={loading()}>
+                    <DynamicOfficers />
+                </Suspense>
+                <br />
                 <hr id="sponsors" />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={loading()}>
                     <Sponsors />
                 </Suspense>
                 <br />

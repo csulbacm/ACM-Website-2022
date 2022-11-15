@@ -15,16 +15,36 @@ export default function EventsContainer() {
             eventWebsite: 'https://csulb.acm.org/hacktoberfest',
             key: 1,
         },
-        // {
-        //     eventTitle: 'Hack the North',
-        //     eventDescription:
-        //         'Hack the North is a 36-hour hackathon that brings together 1,000+ students from across North America and beyond to build the next big thing. We provide the space, the mentors, and the resources to help you make your ideas a reality.',
-        //     eventImage: 'hackthenorth.png',
-        //     eventDate: 'September 17th - September 19th',
-        //     eventLocation: 'Online',
-        //     eventWebsite: 'https://hackthenorth.com/',
-        //     key: 2,
-        // },
+        {
+            eventTitle: 'GBM #2: Python Party',
+            eventDescription:
+                'Have you ever wanted to learn how to program? Join us at our Python Party!',
+            eventImage: 'gbm2.jpg',
+            eventDate: 'October 20th, 2022',
+            eventLocation: 'CSULB VEC 115',
+            eventWebsite: 'https://csulb.acm.org/',
+            key: 2,
+        },
+        {
+            eventTitle: 'GBM #3: Web 3 Workshop',
+            eventDescription:
+                'Build Scalable Web Applications on Hedera by Abi Castro',
+            eventImage: 'gbm3.jpg',
+            eventDate: 'November 15th, 2022',
+            eventLocation: 'CSULB HSD-111',
+            eventWebsite: 'https://forms.gle/oGBHw31PqJkgdpd28',
+            key: 3,
+        },
+        {
+            eventTitle: 'Fall Smash Tournament',
+            eventDescription:
+                'Join us for our Fall Smash Tournament! Amazon gift cards will be awarded to the top 3 placements. To compete, you must register before the tournament date. Please bring your own controller. Gamecube adapters will be available on-site.',
+            eventImage: 'smash.png',
+            eventDate: 'November 17th, 2022',
+            eventLocation: 'ACM Office (EN3-118)',
+            eventWebsite: 'https://forms.gle/XWQHhF8Zf44jMY9E6',
+            key: 4,
+        },
     ];
 
     return (
