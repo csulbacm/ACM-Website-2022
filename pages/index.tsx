@@ -2,18 +2,40 @@ import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
 import Test from '../components/Navbar/Navbar';
 import Sponsors from '../components/Sponsors/Sponsors';
-import Officers from '../components/Officers/Officers';
+
 import EventsContainer from '../components/Events/EventsContainer';
-import Socials from '../components/Socials/Socials';
 import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
-import LandingPage from '../components/LandingPage';
+
 import dynamic from 'next/dynamic';
 import { Suspense, useEffect, useState } from 'react';
-import { ScrollerMotion } from 'scroller-motion';
 import { useSpring, useScroll, motion } from 'framer-motion';
 
-const dynamicLandingPage = dynamic(() => import('../components/LandingPage'), {
+const DynamicLandingPage = dynamic(() => import('../components/LandingPage'), {
+    suspense: true,
+});
+const DynamicOfficers = dynamic(
+    () => import('../components/Officers/Officers'),
+    {
+        suspense: true,
+    },
+);
+const DynamicEvents = dynamic(
+    () => import('../components/Events/EventsContainer'),
+    {
+        suspense: true,
+    },
+);
+const DynamicSponsors = dynamic(
+    () => import('../components/Sponsors/Sponsors'),
+    {
+        suspense: true,
+    },
+);
+const DynamicFooter = dynamic(() => import('../components/Footer/Footer'), {
+    suspense: true,
+});
+const DynamicAbout = dynamic(() => import('../components/About/About'), {
     suspense: true,
 });
 
@@ -41,6 +63,11 @@ const Home: NextPage = () => {
     //         y: mousePosition.y,
     //     },
     // };
+    const loading = () => {
+        return (    
+            <div>Loading ...</div>
+        );
+    };
     return (
         <>
             <div className={styles.main}>
@@ -52,21 +79,27 @@ const Home: NextPage = () => {
                     animate="default"
                 /> */}
                 <Test />
-                <Suspense fallback={<div>Loading...</div>}>
-                    <LandingPage />
+                <Suspense fallback={loading}>
+                    <DynamicLandingPage />
                 </Suspense>
                 <br />
                 <hr id="about" />
                 <About />
                 <br />
                 <hr id="officers" />
-                <Officers />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <DynamicOfficers />
+                </Suspense>
                 <br />
                 <hr id="events" />
-                <EventsContainer />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <DynamicEvents />
+                </Suspense>
                 <br />
                 <hr id="sponsors" />
-                <Sponsors />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Sponsors />
+                </Suspense>
                 <br />
                 <hr id="footer" />
                 <Footer />
