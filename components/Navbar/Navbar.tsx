@@ -55,18 +55,34 @@ export default function Test() {
                     </Typography>
                 </div>
                 <div className="hidden lg:block">{navList}</div>
+                <div>
+                <Button
+                    variant="gradient"
+                    size="sm"
+                    className="hidden lg:inline-block mr-3"
+                >
+                    <a
+                        className="inline-block w-full"
+                        href="https://beachhacks.com"
+                        target="blank"
+                    >
+                        BeachHacks!
+                    </a>
+                </Button>
                 <Button
                     variant="gradient"
                     size="sm"
                     className="hidden lg:inline-block"
                 >
                     <a
+                        className="inline-block w-full"
                         href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
                         target="blank"
                     >
                         APPLY NOW!
                     </a>
                 </Button>
+                </div>
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
