@@ -26,13 +26,13 @@ export default function Test() {
                 </Link>
             </Typography>
             <Typography as="li" variant="small" className="p-1 font-normal">
-                <Link href="#officers" className="flex items-center">
-                    Team
+                <Link href="#events" className="flex items-center">
+                    Events
                 </Link>
             </Typography>
             <Typography as="li" variant="small" className="p-1 font-normal">
-                <Link href="#events" className="flex items-center">
-                    Events
+                <Link href="#officers" className="flex items-center">
+                    Team
                 </Link>
             </Typography>
             <Typography as="li" variant="small" className="p-1 font-normal">
@@ -56,32 +56,32 @@ export default function Test() {
                 </div>
                 <div className="hidden lg:block">{navList}</div>
                 <div>
-                <Button
-                    variant="gradient"
-                    size="sm"
-                    className="hidden lg:inline-block mr-3"
-                >
-                    <a
-                        className="inline-block w-full"
-                        href="https://beachhacks.com"
-                        target="blank"
+                    <Button
+                        variant="gradient"
+                        size="sm"
+                        className="hidden lg:inline-block mr-3"
                     >
-                        BeachHacks!
-                    </a>
-                </Button>
-                <Button
-                    variant="gradient"
-                    size="sm"
-                    className="hidden lg:inline-block"
-                >
-                    <a
-                        className="inline-block w-full"
-                        href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
-                        target="blank"
+                        <a
+                            className="inline-block w-full"
+                            href="https://beachhacks.com"
+                            target="blank"
+                        >
+                            BeachHacks!
+                        </a>
+                    </Button>
+                    <Button
+                        variant="gradient"
+                        size="sm"
+                        className="hidden lg:inline-block"
                     >
-                        APPLY NOW!
-                    </a>
-                </Button>
+                        <a
+                            className="inline-block w-full"
+                            href="https://csulb.campuslabs.com/engage/submitter/form/start/545578"
+                            target="blank"
+                        >
+                            APPLY NOW!
+                        </a>
+                    </Button>
                 </div>
                 <IconButton
                     variant="text"

@@ -45,6 +45,16 @@ export default function EventsContainer() {
             eventWebsite: 'https://forms.gle/XWQHhF8Zf44jMY9E6',
             key: 4,
         },
+        {
+            eventTitle: 'BeachHacks 7.0',
+            eventDescription:
+                "Looking for an exciting opportunity to dive into exciting projects, network with industry professionals, and showcase your skills? Look no further than BeachHacks, the premier 24-hour hackathon at Cal State Long Beach! Join a community of talented students and industry professionals as you collaborate to bring your innovative ideas to life. With prizes, networking opportunities, and technical workshops, BeachHacks is the perfect platform for you to take your skills to the next level. Don't miss out on this chance to learn, grow, and gain experience for jobs in tech. Sign up now for BeachHacks and get ready to hack the beach! ",
+            eventImage: 'beachhacks.png',
+            eventDate: 'February 25th - 26th, 2023',
+            eventLocation: 'CSULB University Student Union',
+            eventWebsite: 'https://beachhacks.com/',
+            key: 5,
+        },
     ];
 
     return (
@@ -53,7 +63,7 @@ export default function EventsContainer() {
                 Events
             </Typography>
             <div className="flex flex-wrap justify-center gap-14 pt-2">
-                {events.map((event) => (
+                {events.reverse().map((event) => (
                     <EventCard
                         eventTitle={event.eventTitle}
                         eventDescription={event.eventDescription}

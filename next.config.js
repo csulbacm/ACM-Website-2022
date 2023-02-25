@@ -15,6 +15,7 @@ const nextConfig = {
             '/': { page: '/', __nextDefaultLocale: 'en' },
             '/links': { page: '/links' },
             '/hacktoberfest': { page: '/hacktoberfest' },
+            '/beachhacks': { page: '/beachhacks' },
         };
     },
     trailingSlash: true,
