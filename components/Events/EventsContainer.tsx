@@ -55,6 +55,17 @@ export default function EventsContainer() {
             eventWebsite: 'https://beachhacks.com/',
             key: 5,
         },
+        {
+            eventTitle:
+                'GBM #5 Aaron Trank: Senior Front-End Engineer at Amp/Amazon',
+            eventDescription:
+                "As you progress through college and prepare to enter the workforce, it's important to not only focus on developing your own skills but also on how you can help others grow and succeed. Join ACM and guest speaker Aaron Trank and how you can use your knowledge and expertise to positively impact those around you and fast track yourself to a senior position.",
+            eventImage: 'GBM5.jpg',
+            eventDate: 'March 9th, 2023',
+            eventLocation: 'VEC 115',
+            eventWebsite: 'https://csulb.acm.org/',
+            key: 6,
+        },
     ];
 
     return (

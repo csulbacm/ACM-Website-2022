@@ -47,7 +47,7 @@ const About = () => {
             {/* Generate a positive paragraph about the purpose, goal, and missions of ACM at CSULB */}
             <Typography
                 variant="paragraph"
-                color="gray-800"
+                color="gray"
                 className="mb-2 w-3/4 text-black text-center my-5"
             >
                 The Association for Computing Machinery (ACM) is a Student-Run,
@@ -64,13 +64,13 @@ const About = () => {
             {/* three main sections and subtexts: Coding, Connecting, and Contributing*/}
             <div className="w-full flex flex-wrap justify-around items-center gap-20 text-black">
                 <div className="flex flex-col items-center justify-center w-2/5">
-                    <Typography variant="h3" color="gray-800" className="mb-2">
+                    <Typography variant="h3" color="gray" className="mb-2">
                         Coding
                     </Typography>
                     <CodeIcon className=" mb-2" fontSize="large" />
                     <Typography
                         variant="paragraph"
-                        color="gray-800"
+                        color="gray"
                         className="mb-2"
                     >
                         Learn to code and build your own projects with
@@ -78,13 +78,13 @@ const About = () => {
                     </Typography>
                 </div>
                 <div className="flex flex-col items-center justify-center w-2/5">
-                    <Typography variant="h3" color="gray-800" className="mb-2">
+                    <Typography variant="h3" color="gray" className="mb-2">
                         Connecting
                     </Typography>
                     <RssFeedIcon className="mb-2" fontSize="large" />
                     <Typography
                         variant="paragraph"
-                        color="gray-800"
+                        color="gray"
                         className="mb-2 w-full"
                     >
                         Connect with students and Professional Representitives
@@ -92,13 +92,13 @@ const About = () => {
                     </Typography>
                 </div>
                 <div className="flex flex-col items-center justify-center w-2/5">
-                    <Typography variant="h3" color="gray-800" className="mb-2">
+                    <Typography variant="h3" color="gray" className="mb-2">
                         Contributing
                     </Typography>
                     <SettingsIcon className="mb-2" fontSize="large" />
                     <Typography
                         variant="paragraph"
-                        color="gray-800"
+                        color="gray"
                         className="mb-2"
                     >
                         We are determined to advance the science and application

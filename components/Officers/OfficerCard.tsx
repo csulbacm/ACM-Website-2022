@@ -54,7 +54,11 @@ export default function OfficerCard({
                         {name}
                     </a>
                 </Typography>
-                <Typography variant="body" color="blue-gray" className="mb-2">
+                <Typography
+                    variant="paragraph"
+                    color="blue-gray"
+                    className="mb-2"
+                >
                     ({pronouns})
                 </Typography>
                 <Typography color="blue" className="font-medium" textGradient>

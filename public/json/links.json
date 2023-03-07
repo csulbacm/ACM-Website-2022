@@ -15,8 +15,8 @@
         "enabled": true
     },
     {
-      "title": "BeachHacks 2023 (Coming Soon)",
-      "url": "https://beachhacks.com",
-      "enabled": false
+        "title": "BeachHacks 2023 (Coming Soon)",
+        "url": "https://beachhacks.com",
+        "enabled": true
     }
 ]

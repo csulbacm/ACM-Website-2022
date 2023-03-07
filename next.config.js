@@ -12,7 +12,7 @@ const nextConfig = {
         { dev, dir, outDir, distDir, buildId },
     ) {
         return {
-            '/': { page: '/', __nextDefaultLocale: 'en' },
+            '/': { page: '/' },
             '/links': { page: '/links' },
             '/hacktoberfest': { page: '/hacktoberfest' },
             '/beachhacks': { page: '/beachhacks' },
